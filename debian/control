@@ -1,0 +1,29 @@
+Source: node-postcss-modules-values
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Pirate Praveen <praveen@debian.org>
+Section: javascript
+Testsuite: autopkgtest-pkg-nodejs
+Priority: optional
+Build-Depends: debhelper-compat (= 13)
+ , dh-sequence-nodejs
+ , jest <!nocheck>
+ , node-icss-utils (>= 5.0~) <!nocheck>
+ , node-postcss (>= 8.1~) <!nocheck>
+Standards-Version: 4.5.1
+Vcs-Browser: https://salsa.debian.org/js-team/node-postcss-modules-values
+Vcs-Git: https://salsa.debian.org/js-team/node-postcss-modules-values.git
+Homepage: https://github.com/css-modules/postcss-modules-values#readme
+Rules-Requires-Root: no
+
+Package: node-postcss-modules-values
+Architecture: all
+Depends: ${misc:Depends}
+ , node-icss-utils (>= 5.0~)
+ , node-postcss (>= 8.1~)
+Description: pass arbitrary values between your module files
+ This module is a PostCSS plugin for CSS Modules to pass arbitrary values
+ between module files.
+ .
+ PostCSS is a tool for transforming styles with JS plugins.
+ .
+ Node.js is an event-based server-side JavaScript engine.
